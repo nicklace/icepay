@@ -62,6 +62,26 @@ The package can also be used as-is (i.e. without Laravel)
     );
     ```
 
+## Usage
+Below is a simple usage example of this package
+
+Generate a payment link for &euro;10,00:
+
+    ```php
+    $icepay = \Icepay::paymentObject();
+	$icepay->setAmount(1000)
+				->setCountry("BE")
+				->setLanguage("NL")
+				->setReference("My Sample Website")
+				->setDescription("My Sample Payment")
+				->setCurrency("EUR");
+
+	$basic = Icepay::basicMode();
+	$basic->validatePayment($icepay);
+
+	return sprintf("<a href=\"%s\">%s</a>",$basic->getURL(),$basic->getURL());
+    ```
+
 ## Contributing
 
 Contributions are welcome.
