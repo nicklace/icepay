@@ -39,7 +39,7 @@ The package can also be used as-is (i.e. without Laravel)
 1.  Publish the config file
 
     ```shell
-    $ php artisan config:publish hansvn/icepay
+    $ php artisan config:publish hansvn/laravel-icepay
     ```
 
 1.  Update `app/config/packages/hansvn/icepay/config.php` with your
