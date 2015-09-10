@@ -67,20 +67,23 @@ Below is a simple usage example of this package
 
 Generate a payment link for &euro;10,00:
 
-    ```php
-    $icepay = \Icepay::paymentObject();
-	$icepay->setAmount(1000)
-				->setCountry("BE")
-				->setLanguage("NL")
-				->setReference("My Sample Website")
-				->setDescription("My Sample Payment")
-				->setCurrency("EUR");
+```php
+$icepay = \Icepay::paymentObject();
+$icepay->setAmount(1000)
+			->setCountry("BE")
+			->setLanguage("NL")
+			->setReference("My Sample Website")
+			->setDescription("My Sample Payment")
+			->setCurrency("EUR");
 
-	$basic = Icepay::basicMode();
-	$basic->validatePayment($icepay);
+$basic = Icepay::basicMode();
+$basic->validatePayment($icepay);
 
-	return sprintf("<a href=\"%s\">%s</a>",$basic->getURL(),$basic->getURL());
-    ```
+return sprintf("<a href=\"%s\">%s</a>",$basic->getURL(),$basic->getURL());
+```
+
+You can also take a look at [my example usage repo](https://github.com/hansvn/icepay-postback-handler) of this package that saves the orders in a database
+
 
 ## Contributing
 
