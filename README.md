@@ -14,10 +14,10 @@ The package can also be used as-is (i.e. without Laravel)
 
 ### Laravel < 5.0
 
-1.  Install the `hansvn/icepay` package
+1.  Install the `hansvn/laravel-icepay` package
 
     ```shell
-    $ composer require hansvn/icepay
+    $ composer require hansvn/laravel-icepay
     ```
 
 1. Update app/config/app.php` to activate the package
