@@ -7,42 +7,42 @@ The package can also be used as-is (i.e. without Laravel)
 
 ## Requirements
 
-- PHP >=5.4
+- PHP >=5.5
 
 ## Getting started
 ------------------
 
 ### Laravel < 5.0
 
-1.  Install the `hansvn/laravel-icepay` package
+1.  Install the `phamels/laravel-icepay` package
 
     ```shell
-    $ composer require hansvn/laravel-icepay
+    $ composer require phamels/laravel-icepay
     ```
 
 1. Update app/config/app.php` to activate the package
 
     ```php
-    # Add `Hansvn\Icepay\IcepayServiceProvider` to the `providers` array
+    # Add `Phamels\Icepay\IcepayServiceProvider` to the `providers` array
     'providers' => array(
         ...
-        'Hansvn\Icepay\IcepayServiceProvider',
+        'Phamels\Icepay\IcepayServiceProvider',
     )
 
     # Add the Icepay alias
     'aliases' => array(
         ...
-        'Icepay'          => 'Hansvn\Icepay\Facades\Icepay',
+        'Icepay'          => 'Phamels\Icepay\Facades\Icepay',
     )
     ```
 
 1.  Publish the config file
 
     ```shell
-    $ php artisan config:publish hansvn/laravel-icepay
+    $ php artisan config:publish phamels/laravel-icepay
     ```
 
-1.  Update `app/config/packages/hansvn/icepay/config.php` with your
+1.  Update `app/config/packages/phamels/icepay/config.php` with your
     Icepay API key:
 
     ```php
@@ -82,7 +82,7 @@ $basic->validatePayment($icepay);
 return sprintf("<a href=\"%s\">%s</a>",$basic->getURL(),$basic->getURL());
 ```
 
-You can also take a look at [my example usage repo](https://github.com/hansvn/icepay-postback-handler) of this package that saves the orders in a database
+You can also take a look at [my example usage repo](https://github.com/phamels/icepay-postback-handler) of this package that saves the orders in a database
 
 
 ## Contributing

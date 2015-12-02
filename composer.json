@@ -1,9 +1,9 @@
 {
-    "name": "hansvn/laravel-icepay",
+    "name": "phamels/laravel-icepay",
     "description": "Laravel integration of the icepay api",
     "authors": [
         {
-            "name": "Hansvn",
+            "name": "Phamels",
             "email": "hans@brandworks.be"
         }
     ],
@@ -13,7 +13,7 @@
     },
     "autoload": {
         "psr-0": {
-            "Hansvn\\Icepay": "src/"
+            "Phamels\\Icepay": "src/"
         }
     },
     "minimum-stability": "stable"
