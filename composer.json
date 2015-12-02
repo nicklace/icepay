@@ -7,6 +7,15 @@
             "email": "pieter@hamels.be"
         }
     ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/hansvn/icepay"
+        }
+    ],
+    "require": {
+        "hansvn/laravel-icepay": "dev-laravel51"
+    },
     "require": {
         "php": ">=5.5.0",
         "illuminate/support": "5.1.*"
