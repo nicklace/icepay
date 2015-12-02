@@ -34,30 +34,14 @@ Updated the code from the [Laravel Icepay](https://github.com/hansvn/icepay) pac
     )
     ```
 
-1.  Publish the config file
-
-    ```shell
-    $ php artisan config:publish phamels/laravel-icepay
-    ```
-
-1.  Update `app/config/packages/phamels/icepay/config.php` with your
-    Icepay API key:
+1.  Define the config parameters in your `config/services.php` file
 
     ```php
-    return array(
-        'MERCHANTID'	=> xxxxx,//<--- Change this into your own merchant ID
-        'SECRETCODE'	=> "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",//<--- Change this into your own merchant ID 
-        ...
-    );
-    ```
-
-1.  Optionally, you can set the log option to true or false to keep logs of the icepay packages
-
-    ```php
-    return array(
-    	...
-        'log'			=> true,
-    );
+        'icepay' => [
+            'MERCHANTID'	=> xxxxx,
+            'SECRETCODE'	=> "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            'log'			=> true
+        ],
     ```
 
 ## Usage

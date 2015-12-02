@@ -14,7 +14,7 @@ class IcepayServiceProviderLaravel5 extends ServiceProvider {
 		$app = $this->app;
 
 		$app['icepay'] = $app->share(function ($app) {
-			return new Icepay($app['config']->get('icepay::config'));
+			return new IcepayManager($app['config']->get('icepay::config'));
 		});
 
 		$app->alias('icepay', '\Phamels\Icepay\Icepay');

@@ -18,10 +18,10 @@ class IcepayManager {
 	public function __construct(array $config = array()) {
 		$this->configure($config);
 
-		define('MERCHANTID', \Config::get('icepay::MERCHANTID'));
-		define('SECRETCODE', \Config::get('icepay::SECRETCODE'));
+		define('MERCHANTID', \Config::get('services.icepay.MERCHANTID'));
+		define('SECRETCODE', \Config::get('services.icepay.SECRETCODE'));
 
-		if(\Config::get('icepay::log')) {
+		if(\Config::get('services.icepay.log')) {
 			$this->logger = API\Logger::getInstance();
 			$this->logger->enableLogging()
 					->setLoggingLevel(API\Logger::LEVEL_ALL)
