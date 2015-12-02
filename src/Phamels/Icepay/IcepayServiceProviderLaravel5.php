@@ -21,6 +21,6 @@ class IcepayServiceProviderLaravel5 extends ServiceProvider {
 	}
 
 	public function boot() {
-		$this->package('phamels/icepay', 'icepay');
+		\App::register('\Phamels\Icepay\IcepayServiceProviderLaravel5');
 	}
 }

@@ -1,18 +1,16 @@
-# Laravel Icepay
+# Laravel Icepay for Laravel 5.1
 
-This package a Laravel integration of [the icepay api](https://github.com/icepay/icepay).
-The package can also be used as-is (i.e. without Laravel)
-
-!IMPORTANT the package has not been tested yet on all platforms!
+Updated the code from the [Laravel Icepay](https://github.com/hansvn/icepay) package to be able to use it with Laravel 5.1
 
 ## Requirements
 
 - PHP >=5.5
+- Laravel >= 5.1
 
 ## Getting started
 ------------------
 
-### Laravel < 5.0
+### Laravel >= 5.1
 
 1.  Install the `phamels/laravel-icepay` package
 
@@ -26,13 +24,13 @@ The package can also be used as-is (i.e. without Laravel)
     # Add `Phamels\Icepay\IcepayServiceProvider` to the `providers` array
     'providers' => array(
         ...
-        'Phamels\Icepay\IcepayServiceProvider',
+        Phamels\Icepay\IcepayServiceProvider::class,
     )
 
     # Add the Icepay alias
     'aliases' => array(
         ...
-        'Icepay'          => 'Phamels\Icepay\Facades\Icepay',
+        'Icepay'          => Phamels\Icepay\Facades\Icepay::class,
     )
     ```
 
@@ -81,8 +79,6 @@ $basic->validatePayment($icepay);
 
 return sprintf("<a href=\"%s\">%s</a>",$basic->getURL(),$basic->getURL());
 ```
-
-You can also take a look at [my example usage repo](https://github.com/phamels/icepay-postback-handler) of this package that saves the orders in a database
 
 
 ## Contributing
