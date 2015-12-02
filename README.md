@@ -15,7 +15,7 @@ Updated the code from the [Laravel Icepay](https://github.com/hansvn/icepay) pac
 1.  Install the `phamels/laravel-icepay` package
 
     ```shell
-    $ composer require phamels/laravel-icepay:dev-laravel51
+    $ composer require phamels/laravel-icepay:dev-master
     ```
 
 1. Update app/config/app.php` to activate the package
