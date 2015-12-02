@@ -4,11 +4,11 @@
     "authors": [
         {
             "name": "Phamels",
-            "email": "hans@brandworks.be"
+            "email": "pieter@hamels.be"
         }
     ],
     "require": {
-        "php": ">=5.4.0",
+        "php": ">=5.5.0",
         "illuminate/support": "5.1.*"
     },
     "autoload": {
