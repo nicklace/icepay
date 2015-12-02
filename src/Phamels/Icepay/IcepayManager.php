@@ -15,8 +15,8 @@ class IcepayManager {
 	 *
 	 * @param array $config
 	 */
-	public function __construct(array $config = array()) {
-		$this->configure($config);
+	public function __construct($config = array()) {
+		$this->configure(array($config));
 
 		define('MERCHANTID', \Config::get('services.icepay.MERCHANTID'));
 		define('SECRETCODE', \Config::get('services.icepay.SECRETCODE'));
