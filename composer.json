@@ -1,10 +1,10 @@
 {
-    "name": "phamels/laravel-icepay",
+    "name": "nicklace/laravel-icepay",
     "description": "Laravel integration of the icepay api",
     "authors": [
         {
-            "name": "Phamels",
-            "email": "pieter@hamels.be"
+            "name": "Nicklace",
+            "email": "nicolas@65inches.com"
         }
     ],
     "repositories": [
@@ -21,7 +21,7 @@
     },
     "autoload": {
         "psr-0": {
-            "Phamels\\Icepay": "src/"
+            "Nicklace\\Icepay": "src/"
         }
     },
     "minimum-stability": "stable"
