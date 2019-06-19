@@ -17,8 +17,7 @@
         "hansvn/laravel-icepay": "dev-laravel51"
     },
     "require": {
-        "php": ">=5.5.0",
-        "illuminate/support": "5.1.*"
+        "php": ">=5.5.0"
     },
     "autoload": {
         "psr-0": {
